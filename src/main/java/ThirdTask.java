@@ -1,21 +1,10 @@
-import java.util.Scanner;
-
 public class ThirdTask {
-
     public static void main(String[] args) {
-        while (true) {
-            System.out.println("Введите длинну массива:");
-            int value = new Scanner(System.in).nextInt();
-            int[] numbers = new int[value];
-            for (int i = 0; i < numbers.length; i++) {
-                System.out.println("Введите " + (i+1) + " значние массива:");
-                numbers[i] = new Scanner(System.in).nextInt();
-            }
-            System.out.println("Элементы массива кратные 3:");
-            for (int print : numbers) {
-                if (print % 3 == 0) {
-                    System.out.println(print + " ");
-                }
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("Чётные числа:");
+        for (int number : numbers) {
+            if (number % 2 == 0) {
+                System.out.println(number);
             }
         }
     }
